@@ -1,0 +1,23 @@
+
+<link rel="stylesheet" href="/styles.css">
+
+<h1> Favorite Pizza </h1>
+
+<p> My favorite pizza is New York pizza </p>
+
+<img src ="/pizzapic.jpg">
+
+<ul>
+
+	<% @pizza_ingredients.each do |the_ingredients| %>
+	 <li>
+        Ingredients: <%= the_ingredients %>
+     </li>
+    <% end %>
+
+</ul>
+
+<small>
+	Currently in the session:
+	<b><%= session[:saved_value] %></b>
+</small>
