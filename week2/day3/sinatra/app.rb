@@ -25,7 +25,7 @@ end
 users = [
   { :username => "starwars",     :name => "Star Wars",     :bio => "The official home of Star Wars on Twitter.",           :avatar => "https://pbs.twimg.com/profile_images/631535425333518336/D-i_GqpT_400x400.jpg" },
   { :username => "celinedion",   :name => "Celine Dion",   :bio => "Posts signed / Publications signées TC = Team Céline", :avatar => "https://pbs.twimg.com/profile_images/733642354565996544/JrzvO3Y7_400x400.jpg" },
-  { :username => "khalifenizar", :name => "Nizar Khalife", :bio => "I like pizza.",                                        :avatar => "https://pbs.twimg.com/profile_images/480477171362701313/HfqN0EU7_400x400.jpeg" }
+  { :username => "javierechevarria", :name => "Javier Echevarria", :bio => "I live for my son.",                               :avatar => "<img src ="/withemmiatlego.jpg">" }
 ]
 
 
