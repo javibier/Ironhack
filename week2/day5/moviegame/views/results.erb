@@ -1,0 +1,44 @@
+<h1> Movie Trivia </h1>
+
+<h2> What movie was released in 1997? </h2>
+
+
+<p>
+	Showing
+	<strong> <%= @movies.length %> </strong>
+	results.
+
+</p>
+
+
+<% @movies.each do |the_movie| %>
+
+    <%if the_movie.year == 1997%>
+
+	    <img src=" <%= the_movie.poster %>" width = "400" height = "400" onclick="alert ('yay')" />
+
+			<p>
+				<button><strong> <%= the_movie.year %> onclick="alert ('Yes')" /></strong></button> 
+			</p>
+
+			    <%if the_movie.year == 1997%>
+			      <a href="/"></a>
+
+			    <%end%>
+
+	<%else%>
+
+	    <img src=" <%= the_movie.poster %>" width = "400" height = "400" onclick="alert ('nay')" />
+			<p>
+					
+			<button><strong> <%= the_movie.year %> </strong></button> <onclick="alert ('No')" />
+
+			</p>
+	
+	<%end%>
+
+<% end %>
+
+<a href="/">
+  Search Again
+</a>
