@@ -1,0 +1,22 @@
+.blue .direction {
+	background-color: #00008b;
+	color: white;
+	border-style: solid;
+	border-color: #dc143c;
+	padding: 20%;
+}
+
+#red .direction {
+	background-color: #dc143c;
+	color: white;
+	border-style: solid;
+	border-color: #00008b;
+
+}
+
+.green .direction {
+	background-color: #556b2f;
+	color: white;
+	border-style: solid;
+	border-color: #00008b;
+}
