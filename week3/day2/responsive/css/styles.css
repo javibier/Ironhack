@@ -1,0 +1,22 @@
+#header-image {
+	background-image: url('emmi1.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 800px;
+}
+
+@media screen and (min-width: 768px) {
+	#header-image {
+		background-image: url('emmi2.jpeg');
+	}
+}
+@media screen and (min-width: 962px) {
+	#header-image {
+		background-image: url('emmi3.jpeg');
+	}
+}
+@media screen and (min-width: 1200px) {
+	#header-image {
+		background-image: url('emmi4.jpeg');
+	}
+}
