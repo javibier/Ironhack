@@ -1,0 +1,37 @@
+.logo {
+	position: absolute;
+	top: 10px;
+}
+
+.font {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.tweetfont {
+	font-size: 25px;
+	color: #32977c;
+}
+
+.tweetfont2 {
+	font-size: 25px;
+	color: #000000;
+}
+
+.tweetfont3 {
+	font-size: 18px;
+	color: #32977c;
+}
+
+.tweetfont4 {
+	font-size: 18px;
+	color: #000000;
+}
+
+#search-query {
+	position: absolute;
+	bottom: 130px;
+
+}
+
+
