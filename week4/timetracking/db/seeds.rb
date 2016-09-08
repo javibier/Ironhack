@@ -5,17 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Project.create(name: 'Ironhack', description: 'Coding Bootcamp')
+ih = Project.create(name: 'Ironhack', description: 'Coding Bootcamp')
 
 Project.create(name: 'Time tracking app')
 
-Project.create(name: 'Recipes', description: 'Track my favorite recipes')
+re = Project.create(name: 'Recipes', description: 'Track my favorite recipes')
 
-Project.create(name: 'Hemo', description: 'Track my favorite uses of Hemp')
+he = Project.create(name: 'Hemp', description: 'Track my favorite uses of Hemp')
 
-Project.create(name: 'Home', description: 'Where the heart is')
+ho = Project.create(name: 'Home', description: 'Where the heart is')
 
-Project.create(name: 'Cars', description: 'I would love to restore old cars')
+ca = Project.create(name: 'Cars', description: 'I would love to restore old cars')
 
 Project.create(name: 'Seltzer Water', description: 'The benefits of drinking seltzer water')
 
@@ -24,3 +24,13 @@ Project.create(name: 'Travel', description: 'Track my favorite places to travel'
 Project.create(name: 'Dinner', description: 'Track my favorite restaurants')
 
 Project.create(name: 'Movies', description: 'Track my favorite movies')
+
+ih.time_entries.create(hours: 1, minutes: 32)
+
+re.time_entries.create(hours: 1, minutes: 32)
+
+he.time_entries.create(hours: 1, minutes: 32)
+
+ho.time_entries.create(hours: 1, minutes: 32)
+
+ca.time_entries.create(hours: 1, minutes: 32)
