@@ -9,22 +9,21 @@ class ProjectsController < ApplicationController
 
 	def index 
 
-		@projects = Project.order(created_at: :desc)
-		                    .limit(10)
+		@projects = Project.all
 
 	end
 
 	def show
 
-    	@my_project = Project.find_by(id: params[:id])
-    	unless @my_project
+    	@project = Project.find_by(id: params[:id])
+    	unless @project
     		render 'no_projects_found'
         end
     end
 
     def new
 
-    	@my_project = Project.new
+    	@project = Project.new
 
     end
 
@@ -37,7 +36,7 @@ class ProjectsController < ApplicationController
 
         @my_project.save
 
-        redirect_to "/projects/#{@project.id}"
+        redirect_to "/projects/#{@my_project.id}"
     end
 
 end
