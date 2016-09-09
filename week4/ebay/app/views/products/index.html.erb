@@ -1,0 +1,21 @@
+<h2> Products on the Junk Auction</h2>
+
+<header>
+
+  		 <ul>
+  		 	  <li>
+  		 	   <a href="products/new"> Add a new Product to Auction </a>
+  		 	  </li>
+        </ul>
+
+</header>
+
+<ul>
+
+	<% @products.each do |product| %>
+
+	   <li><%= product.title%> , <%= product.description %> , <%= product.deadline %></li>
+
+	<% end %>
+
+</ul>

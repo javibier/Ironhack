@@ -1,0 +1,28 @@
+<h3>Add a new user</h3>
+
+<form action="/users" method="POST">
+	  <div>
+	    <label for="user_name">Name</label>
+	    <input type="text" name="user[name]" id="user_name">
+	  </div>
+
+	  <div>
+	    <label for="user_address">Address</label>
+	    <textarea name="user[address]" id="user_address"></textarea>
+	  </div>
+
+	  <div>
+	    <label for="user_phone">Phone number</label>
+	    <input type="tel" name="user[phone]" id="user_phone">
+	  </div>
+
+	  <div>
+	    <label for="user_email">Email</label>
+	    <input type="email" name="user[email]" id="user_email">
+	  </div>
+  <button type="Submit">Add this contact</button>
+
+  <input type="hidden" name="authenticity_token"
+     value="<%= form_authenticity_token %>">
+
+</form>

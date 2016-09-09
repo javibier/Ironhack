@@ -1,0 +1,24 @@
+<h3>New Product page</h3>
+
+<form action="/products" method="POST">
+	  <div>
+	    <label for="product_title">Product</label>
+	    <input type="text" name="product[title]" id="product_title">
+	  </div>
+
+	  <div>
+	    <label for="product_description">Description</label>
+	    <textarea name="produc[description]" id="product_description"></textarea>
+	  </div>
+
+	  <div>
+	    <label for="product_deadline">Auction Deadline</label>
+	    <input type="Deadline" name="product[deadline]" id="product_deadline">
+	  </div>
+
+  <button type="Submit">Add this product</button>
+
+  <input type="hidden" name="authenticity_token"
+     value="<%= form_authenticity_token %>">
+
+</form>
