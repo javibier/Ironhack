@@ -1,4 +1,4 @@
-<h1><%= @project.name %></h1>
+<h2><%= @project.name %></h2>
 <ul>
   <% @time_entries.each do |entry| %>
     <li>
@@ -14,3 +14,5 @@
   <% end %>
 
 </ul>
+
+<%=link_to "New Time Entry",new_project_time_entry_path(@project)%>

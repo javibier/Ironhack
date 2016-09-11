@@ -1,8 +1,13 @@
+<h2> All Projects </h2>
+
 <ul>
 
 	<% @projects.each do |project| %>
 
-	   <li><%= project.name%> ; <%=project.description %></li>
+	   <li><%= link_to project.name, project_path(project) %> - 
+	   	   <%=project.description %> 
+	   	     (Started project on: <%=project.created_at %> )
+	   	</li>
 
 	<% end %>
 

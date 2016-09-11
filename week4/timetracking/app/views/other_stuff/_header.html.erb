@@ -8,17 +8,20 @@
   		 	</li>
 
         <li>
-          <a href="/projects"> Projects </a>
+          <%=link_to 'Project List',projects_path%>
         </li>
 
         <li>
-          <a href="/projects/new"> New Projects </a>
+          <a href="/projects/new"> Add New Projects </a>
         </li>
 
+        <li>
+          <a href="'/projects/:project_id/time_entries'"> Project Details </a>
+        </li>
+ 
         <li>
           <a href="/contact"> Contact </a>
         </li>
-
       </ul>
 
 </header>

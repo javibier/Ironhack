@@ -5,32 +5,34 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-ih = Project.create(name: 'Ironhack', description: 'Coding Bootcamp')
 
-Project.create(name: 'Time tracking app')
 
-re = Project.create(name: 'Recipes', description: 'Track my favorite recipes')
+project1 = Project.create(name: 'Ironhack', description: 'Coding Bootcamp')
 
-he = Project.create(name: 'Hemp', description: 'Track my favorite uses of Hemp')
+project2 = Project.create(name: 'Time tracking app')
 
-ho = Project.create(name: 'Home', description: 'Where the heart is')
+project3 = Project.create(name: 'Recipes', description: 'Track my favorite recipes')
 
-ca = Project.create(name: 'Cars', description: 'I would love to restore old cars')
+project4 = Project.create(name: 'Hemp', description: 'Track my favorite uses of Hemp')
 
-Project.create(name: 'Seltzer Water', description: 'The benefits of drinking seltzer water')
+project5 = Project.create(name: 'Home', description: 'Where the heart is')
 
-Project.create(name: 'Travel', description: 'Track my favorite places to travel')
+project6 = Project.create(name: 'Cars', description: 'I would love to restore old cars')
 
-Project.create(name: 'Dinner', description: 'Track my favorite restaurants')
+project7 = Project.create(name: 'Seltzer Water', description: 'The benefits of drinking seltzer water')
 
-Project.create(name: 'Movies', description: 'Track my favorite movies')
+project8 = Project.create(name: 'Travel', description: 'Track my favorite places to travel')
 
-ih.time_entries.create(hours: 1, minutes: 32)
+project9 = Project.create(name: 'Dinner', description: 'Track my favorite restaurants')
 
-re.time_entries.create(hours: 1, minutes: 32)
+project10 = Project.create(name: 'Movies', description: 'Track my favorite movies')
 
-he.time_entries.create(hours: 1, minutes: 32)
+project10.time_entries.create(hours: 1, minutes: 32)
 
-ho.time_entries.create(hours: 1, minutes: 32)
+project8.time_entries.create(hours: 1, minutes: 32)
 
-ca.time_entries.create(hours: 1, minutes: 32)
+project7.time_entries.create(hours: 1, minutes: 32)
+
+project6.time_entries.create(hours: 1, minutes: 32)
+
+project4.time_entries.create(hours: 1, minutes: 32)

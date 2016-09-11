@@ -1,6 +1,13 @@
-<h1> New Project</h1>
+<h2> Project:</h2>
 
 <p> 
-	<%= @project.name %> - <%= @project.description %>
-
+	<%= @project.name %> - <%= @project.description %> - <%= @project.created_at %>
 </p>
+
+<!-- Add a link to: time_entries#index -->
+
+ <ul>
+   <li>
+  	   <%=link_to 'List of entries', project_time_entries_path(@project)%>
+   </li>
+ </ul>
