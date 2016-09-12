@@ -2,8 +2,8 @@ Rails.application.routes.draw do
 
 	root :to=> 'projects#home'
 
-resources :projects do 
-	resources :time_entries
+resources :projects, only: [:index, :show, :new, :create] do 
+	resources :time_entries, except: [:show]
 end
 
 end

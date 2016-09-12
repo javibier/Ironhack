@@ -12,9 +12,7 @@ Rails.application.routes.draw do
   get "/textinspections/new", to: "textinspections#new"
 
 
-  post "/textinspections", to: "textinspections#create"
-
+  post "/textinspections/", to: "textinspections#create"
   
-  # get "/textinspections/results", to: "textinspections#results"
 
 end

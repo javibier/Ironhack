@@ -3,3 +3,6 @@
 
 <h3> Results </h3>
 
+<p> @text </p>
+
+<p> @wordcount </p>

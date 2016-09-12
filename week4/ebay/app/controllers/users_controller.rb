@@ -8,8 +8,8 @@ class UsersController < ApplicationController
 
     def show
 
-        @users = User.order(:name)
-        # @user = User.find(params[:id])
+        # @users = User.order(:name)
+        @user = User.find(params[:id])
 
 
     end

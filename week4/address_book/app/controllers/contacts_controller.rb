@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
 
     def index
 
-     	@contacts = Contact.all
+     	@contacts = Contact.order(:name)
 
     end
 
@@ -31,6 +31,12 @@ class ContactsController < ApplicationController
 	  redirect_to("/contacts")
 
 	  # render(:text => contact.attributes)
+
+    end
+
+    def show
+
+    	@contacts = Contact.find(params[:name])
 
     end
 
