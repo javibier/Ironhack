@@ -9,6 +9,22 @@
   </head>
 
   <body>
+
+  	
+
     <%= yield %>
+
+    <%= render("other_stuff/header") %>
+
+
+    <%= yield(:side_bar) %>
+
+
+    <%= render("other_stuff/sidebar") %>
+   
+
+    <footer>
+      <p>Powered by Javibier</p>
+    </footer>
   </body>
 </html>
