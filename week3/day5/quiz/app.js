@@ -1,40 +1,41 @@
-"user strict";
+"use strict";
 
 
 var read = require("read");
 
 
-var theQuestions = [
-    "What is your name?",
-    "What is Canada\'s national animal?",
-    "What is converted into alcohol during brewing?",
-    "In what year was Prince Andrew born?",
-];
-
-function theResponse (theError, theAnswer) {
-  console.log("");
-  console.log(`Answer: ${theAnswer}`);
- 
-
-a += 1;
-
-if (a < theQuestions.length) {
-    var options = { prompt: `${theQuestions[a]}`};
-
-  console.log("");
-  read(options, theResponse );
-}
-
-else {
-   colsole.log("");
-   console.log("Thanks for playing the quiz.") 
-   };
-};
+var Question = require("./lib/question.js");
+var Quiz = require("./lib/quiz.js");
 
 
-var a = 0;
+var question1 = new Question(1,"What is your name?","Javier");
+var question2 = new Question(2,"What is Canada\'s national animal?","Beaver");
+var question3 = new Question(3,"What is converted into alcohol during brewing?","Water");
+var question4 = new Question(4,"In what year was Prince Andrew born?","1979");
 
-var options =  { prompt: `Questions #${a + 1}: ${theQuestions [a]}` };
+var theTest = new Quiz ();
+
+theTest.nextQuestion( question1 );
+theTest.nextQuestion( question2 ); 
+theTest.nextQuestion( question3 ); 
+theTest.nextQuestion( question4 );   
+
+
+function theResponse (theError, input) {
+  theTest.answer(input);
+
+  if (theTest.theEnd() ) {
+    console.log ("The End");
+  }
+
+  else {
+     options.prompt = theTest.currQuest ();
+     read(options, theResponse);
+     }
+  }
+
+
+var options =  { prompt: theTest.currQuest() };
 
 
 read(options, theResponse );
