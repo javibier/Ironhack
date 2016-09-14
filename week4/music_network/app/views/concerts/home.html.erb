@@ -8,7 +8,7 @@
 
 	<% @concerts.each do |concert| %>
 
-	   <li><%= link_to concert.artist%> , <%=concert.venue %> , <%=concert.city %> , <%=concert.date%>, $<%=concert.price%>, <%= concert.description%></li>
+	   <li><%= link_to concert.artist, concert_path(concert)%> , <%=concert.venue %> , <%=concert.city %> , <%=concert.date%>, $<%=concert.price%>, <%= concert.description%></li>
 
 	<% end %>
 
@@ -21,7 +21,7 @@
 
 	<% @concerts_this_month.each do |concert| %>
 
-	   <li><%= link_to concert.artist%> , <%=concert.venue %> , <%=concert.city %> , <%=concert.date%>, $<%=concert.price%>, <%= concert.description%></li>
+	   <li><%= link_to concert.artist, concert_path(concert)%> , <%=concert.venue %> , <%=concert.city %> , <%=concert.date%>, $<%=concert.price%>, <%= concert.description%></li>
 
 	<% end %>
 
