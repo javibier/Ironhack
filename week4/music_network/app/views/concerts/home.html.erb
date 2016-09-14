@@ -1,0 +1,30 @@
+<h1>Welcome to the Music Concert Network</h1>
+
+<h2>Today's Concerts:</h2>
+
+<header>
+
+   <ul>
+
+	<% @concerts.each do |concert| %>
+
+	   <li><%= link_to concert.artist%> , <%=concert.venue %> , <%=concert.city %> , <%=concert.date%>, $<%=concert.price%>, <%= concert.description%></li>
+
+	<% end %>
+
+   </ul>
+
+    
+<h2>Concert's till End of Month</h2>
+
+    <ul>
+
+	<% @concerts_this_month.each do |concert| %>
+
+	   <li><%= link_to concert.artist%> , <%=concert.venue %> , <%=concert.city %> , <%=concert.date%>, $<%=concert.price%>, <%= concert.description%></li>
+
+	<% end %>
+
+   </ul>
+
+</header>

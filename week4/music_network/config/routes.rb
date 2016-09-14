@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-	get '/', to: 'concert#home'
+	root :to=> 'concerts#home'
 
-	get '/concert', to: 'concert#index'
+  resources :concerts do 
+	resources :comments
 
-	get '/concert/show', to: 'concert#show'
+  end
 
 end
