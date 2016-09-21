@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  calories: MyString
+  calories: 1
 
 two:
   name: MyString
-  calories: MyString
+  calories: 1
