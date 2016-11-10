@@ -1,7 +1,7 @@
 require_relative("../lib/calculator.rb")
 
 
-RSpec. describe StringCalculator do
+RSpec.describe StringCalculator do
 	
 	describe "add method"  do
 

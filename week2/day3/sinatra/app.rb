@@ -25,7 +25,7 @@ end
 users = [
   { :username => "starwars",     :name => "Star Wars",     :bio => "The official home of Star Wars on Twitter.",           :avatar => "https://pbs.twimg.com/profile_images/631535425333518336/D-i_GqpT_400x400.jpg" },
   { :username => "celinedion",   :name => "Celine Dion",   :bio => "Posts signed / Publications signées TC = Team Céline", :avatar => "https://pbs.twimg.com/profile_images/733642354565996544/JrzvO3Y7_400x400.jpg" },
-  { :username => "javierechevarria", :name => "Javier Echevarria", :bio => "I live for my son.",                               :avatar => "<img src ="/withemmiatlego.jpg">" }
+  { :username => "javierechevarria", :name => "Javier Echevarria", :bio => "I live for my son.",                           :avatar => "https://pbs.twimg.com/profile_images/733642354565996544/JrzvO3Y7_400x400.jpg" }
 ]
 
 
@@ -52,13 +52,13 @@ get "/users/:username" do
   end
 end
 
-enable(:sessions)
+# enable(:sessions)
 
-get"/session_test/:text" do
-  text = params[:text]
-  session[:saved_value] = text
-end
+# get"/session_test/:text" do
+#   text = params[:text]
+#   session[:saved_value] = text
+# end
 
-get "/session_show" do
-  "Now in the session: " + session[:saved_value]
-end
+# get "/session_show" do
+#   "Now in the session: " + session[:saved_value]
+# end

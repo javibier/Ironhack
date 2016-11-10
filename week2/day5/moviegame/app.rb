@@ -6,7 +6,7 @@ require "imdb"
 
 get"/" do
 
-erb :home
+  erb :home
 
 end
 
