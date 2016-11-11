@@ -5,5 +5,11 @@ class SitesController < ApplicationController
 		render :home
 
     end
-    
+
+    def index
+
+    	@users = User.all
+
+    end
+
 end
