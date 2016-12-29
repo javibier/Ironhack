@@ -19,13 +19,12 @@ body {
 	width: 100%;
     height: 30px;
 }
-	
 
 .footer {
 	font-size: 1px;
 	color: #fff;
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
 }
 
 .center {
@@ -58,4 +57,23 @@ body {
     bottom: 20px;
     color: #fff;
 }
+
+.image1 {
+	margin-top: 25px;
+	position: absolute;
+	width: 25%;
+}
+
+.image2 {
+	margin-top: 25px;
+	position: absolute;
+	width: 175%;
+}
+
+.image3 {
+	margin-top: 25px;
+	position: absolute;
+	width: 100%;
+}
+
 
