@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root "sites#home"
 
-  get '/sites', to: 'sites#index'
+  get '/sites', to: 'sites#home'
 
   get '/books', to: 'books#home'
 end
