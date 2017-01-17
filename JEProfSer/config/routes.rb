@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get '/sites', to: 'sites#home'
 
   get '/books', to: 'books#home'
+
+  get '/loans', to: 'loans#home'
 end
