@@ -1,0 +1,2 @@
+class NotariesController < ApplicationController
+end
