@@ -2,13 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html, body
-{
+html, body {
 	height: 100%;
 }
 
-body
-{
+body {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Open Sans', sans-serif;
@@ -16,43 +14,35 @@ body
 	color: #000000;
 }
 
-h1, h2, h3
-{
+h1, h2, h3 {
 	margin: 0;
 	padding: 0;
 }
 
-p, ol, ul
-{
+p, ol, ul {
 	margin-top: 0px;
 }
 
-p
-{
+p {
 	line-height: 200%;
 }
 
-strong
-{
+strong {
 }
 
-a
-{
+a {
 	color: #0000FF;
 }
 
-a:hover
-{
+a:hover {
 	text-decoration: none;
 }
 
-a img
-{
+a img {
 	border: none;
 }
 
-.image
-{
+.image {
 	display: inline-block;
 }
 
@@ -311,49 +301,42 @@ ul.style3 .date a:hover
 		
 /** WRAPPER */
 
-#wrapper-bg
-{
+#wrapper-bg {
 	overflow: hidden;
 	background: url(images/bg01.jpg) repeat;
 }
 
-#wrapper
-{
+#wrapper {
 	margin-top: 30px;
 	padding-bottom: 50px;
 	background: #FFF;
 	box-shadow: 0px 10px 0px rgba(0,0,0,0.03), 0px -10px 0px rgba(0,0,0,0.03);
 }
 
-.container
-{
+.container {
 	width: 1200px;
 	margin: 0px auto;
 }
 
-.clearfix
-{
+.clearfix {
 	clear: both;
 }
 
 /** HEADER */
 
-#header
-{
+#header {
 	overflow: hidden;
 	border-bottom: 1px solid #E7E7E7;
 }
 
 /** LOGO */
 
-#logo
-{
+#logo {
 	float: left;
 	width: 300;
 }
 
-#logo h1 a
-{
+#logo h1 a {
 	display: block;
 	line-height: 100px;
 	text-transform: uppercase;
@@ -363,21 +346,18 @@ ul.style3 .date a:hover
 	color: #3E3E3E;
 }
 
-#logo span
-{
+#logo span {
 	color: #8EBEAE;
 }
 
 /** MENU */
 
-#menu
-{
+#menu {
 	float: right;
 	width: 900px;
 }
 
-#menu ul
-{
+#menu ul {
 	float: right;
 	margin: 0px;
 	padding: 30px 0px 0px 0px;
@@ -385,14 +365,12 @@ ul.style3 .date a:hover
 	line-height: normal;
 }
 
-#menu li
-{
+#menu li {
 	float: left;
 	border-left: 1px solid #E7E7E7;
 }
 
-#menu a
-{
+#menu a {
 	display: block;
 	padding: 10px 20px;
 	margin: 0em 1em;
@@ -405,8 +383,7 @@ ul.style3 .date a:hover
 	color: #99CCBB;
 }
 
-#menu .active a
-{
+#menu .active a {
 	background: #99CCBB;
 	border-radius: 5px;
 	box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
@@ -414,43 +391,36 @@ ul.style3 .date a:hover
 	color: #FFFFFF;
 }
 
-#menu .active a:hover
-{
+#menu .active a:hover {
 	background-color: #94C5B5;
 }
 
-#menu .active a:active
-{
+#menu .active a:active {
 	background-color: #8EBEAE;
 }
 
-#menu a:hover
-{
+#menu a:hover {
 	text-decoration: none;
 }
 
 /** PAGE */
 
-#page
-{
+#page {
 }
 
 /** CONTENT */
 
-#content
-{
+#content {
 }
 
 /** SIDEBAR */
 
-#sidebar
-{
+#sidebar {
 }
 
 /* Footer */
 
-#footer-content
-{
+#footer-content {
 	overflow: hidden;
 	padding: 70px 0px 50px 0px;
 	color: #515151;
