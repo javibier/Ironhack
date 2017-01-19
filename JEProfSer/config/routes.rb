@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get '/books', to: 'books#home'
 
   get '/loans', to: 'loans#home'
+
+  get '/notaries', to: 'notaries#home'
 end
